@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+	background-color: #eee;
+	font-family: "Roboto", sans-serif;
+	overflow-x: hidden;
+}
+
+header {
+	position: relative;
+	z-index: 9999;
+}
+
+header #logo {
+	position: fixed;
+	width: 70px;
+	height: auto;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.2));
+	opacity: 1;
+	transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 480px;
+	height: 60px;
+	position: fixed;
+	top: 120px;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	margin: 0 auto;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 12px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	transition: 1s all cubic-bezier(0.08, 0.9, 0.18, 1) 0.2s;
+}
+
+header nav a {
+	text-decoration: none;
+	padding: 10px 16px;
+	color: #1e3050;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1.3px;
+	transition: 0.3s all cubic-bezier(0.08, 0.9, 0.18, 1) 0.6s;
+}
+
+header nav #menu {
+	background-color: transparent;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	width: 50px;
+	aspect-ratio: 1/1;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	position: absolute;
+	inset: 0;
+	border-radius: 100%;
+	margin: auto;
+	cursor: pointer;
+	transform: scale(0);
+	transition: 0.3s all cubic-bezier(0.08, 0.9, 0.18, 1) 0.2s;
+}
+
+header nav #menu .hamburger {
+	width: 100%;
+	border-radius: 5px;
+	transform: scale(0);
+	transition: 0.6s transform cubic-bezier(0.08, 0.9, 0.18, 1) 0s;
+}
+
+/* .menu-close */
+header.menu-close #logo {
+	opacity: 0.5;
+	transform: scale(0.7) translateY(-10px);
+}
+
+header.menu-close nav {
+	width: 60px;
+	height: 60px;
+	top: 25px;
+	padding: 0;
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+	box-shadow: none;
+	cursor: pointer;
+}
+
+header.menu-close nav:hover {
+	transform: scale(1.1);
+	transition-delay: 0s;
+}
+
+header.menu-close nav a {
+	opacity: 0;
+	transform: scale(0.3);
+	transition-delay: 0.1s;
+	visibility: hidden;
+}
+
+header.menu-close nav #menu {
+	transform: scale(1);
+}
+
+header.menu-close nav #menu .hamburger {
+	transform: scale(0.5);
+}
+
+/* test */
+.container {
+	width: 768px;
+	margin: auto;
+	height: 1000px;
+}
+
+.container section {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+section:nth-of-type(1) {
+	background-color: lightgreen;
+}
+section:nth-of-type(2) {
+	background-color: lightblue;
+}
+section:nth-of-type(3) {
+	background-color: lightcoral;
+}
+section:nth-of-type(4) {
+	background-color: lightyellow;
+}
