@@ -2,5 +2,5 @@
 
 Here we have project screenshot:
 
-![screenshot](images/screenshot/Navbar.png)
-![screenshot](images/screenshot/Navbar02.png)
+![screenshot](images/screenshot/02.png)
+![screenshot](images/screenshot/01.png)
