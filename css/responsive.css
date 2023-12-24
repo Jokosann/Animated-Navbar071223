@@ -1,1 +1,29 @@
+@media screen and (max-width: 768px) {
+	header #logo {
+		width: 60px;
+	}
 
+	header nav {
+		max-width: 350px;
+		height: 50px;
+		top: 110px;
+	}
+
+	header nav a {
+		font-size: 12px;
+		letter-spacing: 1.3px;
+	}
+
+	header nav #menu {
+		width: 50px;
+	}
+
+	header.menu-close nav {
+		width: 50px;
+		height: 50px;
+	}
+
+	.container {
+		max-width: 100vw;
+	}
+}
